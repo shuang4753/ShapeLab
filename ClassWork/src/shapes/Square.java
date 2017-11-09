@@ -8,11 +8,23 @@ public class Square extends Rectangle {
 		super(side, side);
 		this.side = side;
 	}
+	
+	public double calculateArea() {
+		
+		return side*side;
+	}
+
+
+	public double calculatePerimeter() {
+		
+		return 4*side;
+	}
+
 
 	@Override
 	public String toString() {
-		// To be written by student
-		return "";
+		
+		return "Square Side Length: " + side + "  Area: " + this.calculateArea() + "  Perimeter:  " + this.calculatePerimeter();
 	}
 
 }
