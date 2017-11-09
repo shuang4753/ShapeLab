@@ -38,8 +38,12 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumArea(Shape[] shapes) {
-		// To be written by student
-		return 
+		double totalArea = 0.0;
+		for(int i = 0; i <= shapes.length; i++)
+		{
+			totalArea = totalArea+ shapes[i].calculateArea(); 
+		}
+		return totaArea;
 	}
 
 	/**
