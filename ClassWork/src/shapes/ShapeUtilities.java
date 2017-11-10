@@ -43,7 +43,7 @@ public class ShapeUtilities {
 		{
 			totalArea = totalArea+ shapes[i].calculateArea(); 
 		}
-		return totaArea;
+		return totalArea;
 	}
 
 	/**
