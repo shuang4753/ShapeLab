@@ -39,7 +39,7 @@ public class ShapeUtilities {
 	 */
 	public static double sumArea(Shape[] shapes) {
 		double totalArea = 0.0;
-		for(int i = 0; i <= shapes.length; i++)
+		for(int i = 0; i < shapes.length; i++)
 		{
 			totalArea = totalArea+ shapes[i].calculateArea(); 
 		}
