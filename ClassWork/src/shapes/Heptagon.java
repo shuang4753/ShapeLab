@@ -6,29 +6,30 @@ package shapes;
  */
 public class Heptagon implements Shape {
 
-	private int length;
-	private int width;
+	private int side;
+	
 
-	public Heptagon(int length, int width) {
-		this.length = length;
-		this.width = width;
+	public Heptagon(int side) {
+		this.side = side;
+		
 	}
 
 
 	public double calculateArea() {
 		
-		return length*width;
+		return (7/4)*side*side* 1/Math.tan(180/7);
 	}
 
 
 	public double calculatePerimeter() {
 		
-		return 2*length+2*width;
+		return 7*side;
 	}
 
 
 	public String toString() {
-		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: "
+		return "Heptagon Side: " + side + "Area: " +
+				this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();
 	}
 }
