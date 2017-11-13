@@ -17,7 +17,7 @@ public class Heptagon implements Shape {
 
 	public double calculateArea() {
 		
-		return (7/4)*side*side* 1/Math.tan(180/7);
+		return (7/4)*side*side* (1/Math.tan(180/7));
 	}
 
 
