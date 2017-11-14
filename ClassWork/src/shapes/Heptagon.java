@@ -7,7 +7,7 @@ package shapes;
 public class Heptagon implements Shape {
 
 	private int side;
-	
+	private double pi = 3.14;
 
 	public Heptagon(int side) {
 		this.side = side;
@@ -17,7 +17,7 @@ public class Heptagon implements Shape {
 
 	public double calculateArea() {
 		
-		return (7/4)*side*side* (1/Math.tan(180/7));
+		return (1.75)*(side*side)*(Math.cos(pi/7)/Math.sin(pi/7));
 	}
 
 
@@ -28,7 +28,7 @@ public class Heptagon implements Shape {
 
 
 	public String toString() {
-		return "Heptagon Side: " + side + "Area: " +
+		return "Heptagon Side: " + side + "   Area: " +
 				this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();
 	}
