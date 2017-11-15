@@ -3,7 +3,7 @@ package shapes;
 import java.util.Random;
 
 /**
- * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
+ * @author Simon + Nicholas Created 11/15/2017 Lab 2.1 shapes
  *
  */
 
@@ -37,7 +37,9 @@ public class ShapeUtilities {
 
 	/**
 	 * adds up the area of all the shapes in the array
-	 * 
+	 * need for loop to address each shape within the array called shapes
+	 * because the first shape's index is 0, the variable counts up to length of array minus 1 
+	 * after each shape is found, add its area to the double: totalArea.
 	 * @param shapes
 	 * @return double
 	 */
@@ -52,7 +54,9 @@ public class ShapeUtilities {
 
 	/**
 	 * adds up the perimeter of all the shapes in the array
-	 * 
+	 * need for loop to address each shape within the array called shapes
+	 * because the first shape's index is 0, the variable counts up to length of array minus 1
+	 * after each shape is found, add its perimeter to the double: totalPerimeter
 	 * @param shapes
 	 * @return double
 	 */
