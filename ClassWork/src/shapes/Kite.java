@@ -21,7 +21,7 @@ public class Kite implements Shape {
 
 	public double calculateArea() {
 		
-		return (1/2)*diagonal1*diagonal2;
+		return (.5)*diagonal1*diagonal2;
 	}
 
 
@@ -32,7 +32,7 @@ public class Kite implements Shape {
 
 
 	public String toString() {
-		return "Kite diagonal1: " + diagonal1 + " diagonal2: " + diagonal2 + " Area: " + this.calculateArea() + " Perimeter: "
+		return "Kite Diagonal 1: " + diagonal1 + " Diagonal 2: " + diagonal2 + "Side 1" + side1 + "Side 2" + side2 + "Area: " + this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();
 	}
 }
